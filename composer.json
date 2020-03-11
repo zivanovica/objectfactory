@@ -2,7 +2,7 @@
     "name": "coapsyfactor/objectfactory",
     "description": "Factory that provides instances of object mapped to related interface",
     "type": "library",
-    "license": "Apache20",
+    "license": "proprietary",
     "authors": [
         {
             "name": "Aleksandar Zivanovic",
