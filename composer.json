@@ -1,0 +1,21 @@
+{
+    "name": "coapsyfactor/objectfactory",
+    "description": "Factory that provides instances of object mapped to related interface",
+    "type": "library",
+    "license": "Apache20",
+    "authors": [
+        {
+            "name": "Aleksandar Zivanovic",
+            "email": "coapsyfactor@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=7.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "ObjectFactory\\": "src/"
+        }
+    }
+}
