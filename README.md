@@ -42,7 +42,13 @@ class PostgreSQL implements IDatabase
 }
 
 \ObjectFactory\Factory::registerInterfaceInstanceProvider(IDatabase::class, function (): IDatabase {
-    return new MySQL('localhost', 'root', '', 'database');
+    switch (getenv('database.driver')) {
+        case 'psql':
+            return new PostgreSQL('localhost', 'admin', '', 'db', 'admin');
+        case 'mysql':
+        default:
+            return new MySQL('localhost', 'root', '', 'database');
+    }
 });
 ```
 
