@@ -24,7 +24,7 @@ class Model implements IModel {}
 
 ```
 ##### Note: Use this only when providing class has complex typed dependencies, providing class with primitive types will cause exception to be thrown.
-##### Note: Library handle circular dependencies.
+##### Note: Library handle circular dependencies by throwing exception when one is detected.
 
 Another approach is using provider callback- function that is called when instance is requested, to achieve this we need to call ``registerInterfaceInstanceProvider``.
 This approach is usually useful when object depends on primitive types.
